@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Суфлёр – семейная ипотека</title>
+<style>
+:root{--bg:#0b0b0d;--panel:#16161a;--line:#2a2a31;--text:#f4f1ea;--muted:#9a968d;--gold:#d8b25a;--cap:#7fc7ff;--broll:#a3d98c;--cut:#ff7a6b}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+header{position:sticky;top:0;z-index:5;background:rgba(11,11,13,.96);border-bottom:1px solid var(--line);padding:10px 16px;display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+header h1{font-size:16px;margin:0 12px 0 0;color:var(--gold);font-weight:700}
+button{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:10px 14px;font-size:15px;cursor:pointer}
+button.on{border-color:var(--gold);color:var(--gold)}
+#speedv{min-width:64px;text-align:center;color:var(--muted);font-size:14px}
+.hint{color:var(--muted);font-size:13px;width:100%}
+main{max-width:980px;margin:0 auto;padding:0 16px 60vh}
+.variant{display:none}.variant.active{display:block}
+.vhead{padding:28px 0 8px;color:var(--muted);font-size:18px;line-height:1.5}
+.vhead b{color:var(--gold)}
+.shot{border-top:1px solid var(--line);padding:22px 0 26px}
+.meta{display:flex;flex-wrap:wrap;gap:10px;font-size:15px;margin-bottom:12px;color:var(--muted)}
+.tc{color:var(--gold);font-weight:700}
+.say p{font-size:40px;line-height:1.3;margin:0 0 10px;font-weight:600}
+@media (max-width:600px){.say p{font-size:34px}}
+.say p.cut{color:var(--text)}
+.notes{font-size:16px;line-height:1.5;margin-top:10px}
+.notes div{margin:3px 0}
+.lbl-cap{color:var(--cap)}.lbl-broll{color:var(--broll)}.lbl-cut{color:var(--cut)}
+details{background:var(--panel);border:1px solid var(--line);border-radius:12px;margin:22px 0;padding:6px 16px}
+summary{cursor:pointer;font-size:20px;font-weight:700;color:var(--gold);padding:10px 0}
+details p,details li,details td,details th{font-size:16px;line-height:1.55}
+table{border-collapse:collapse;width:100%;margin:8px 0}
+td,th{border-bottom:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+a{color:var(--cap)}
+.warn{color:var(--cut)}
+.wrap{overflow-x:auto}
+</style>
+</head>
+<body>
+<header>
+  <h1>Барн Модуль – суфлёр</h1>
+  <button class="vbtn on" data-v="a">Вариант A</button>
+  <button class="vbtn" data-v="b">Вариант B</button>
+  <button id="play">▶ Старт</button>
+  <button id="slower">−</button><span id="speedv">1.0×</span><button id="faster">+</button>
+  <button id="top">⤒ В начало</button>
+  <div class="hint">Пробел – старт/пауза · ↑/↓ – скорость · 1/2 – вариант</div>
+</header>
+<main>
+
+<section class="variant active" id="v-a">
+  <div class="vhead"><b>Вариант A – «контраст».</b> ~38 с, ~90 слов. Одна идея: квартира в Москве с одним ребёнком теперь 12%, а свой дом – 6%. Говорящая голова, крупный план, свет из окна.</div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:00–0:03</span><span>План 1 · крупно, в камеру</span></div>
+    <div class="say"><p>Квартира в Москве с одним ребёнком –</p><p>теперь двенадцать процентов.</p></div>
+    <div class="notes"><div class="lbl-cap">Титр: «Квартира в Москве: 12%»</div><div class="lbl-cut">Склейка на «процентов»</div></div></div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:03–0:09</span><span>План 2 · средний</span></div>
+    <div class="say"><p>С первого октября семейная ипотека</p><p>зависит от числа детей.</p><p>Шесть процентов на квартиру в Москве –</p><p>только если детей четверо.</p></div>
+    <div class="notes"><div class="lbl-cap">Титр: «6% на квартиру = 4 детей»</div><div class="lbl-broll">B-roll: многоэтажки Москвы, 1 с</div></div></div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:09–0:16</span><span>План 3 · крупно, пауза перед фразой</span></div>
+    <div class="say"><p>А на свой дом – шесть процентов.</p><p>При любом количестве детей.</p><p>Это отдельное условие Минфина</p><p>для строительства частного дома.</p></div>
+    <div class="notes"><div class="lbl-cap">Титр: «Свой дом: 6% – при любом числе детей»</div><div class="lbl-broll">B-roll: барнхаус снаружи, пролёт камерой</div><div class="lbl-cut">Склейка на «детей»</div></div></div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:16–0:25</span><span>План 4 · средний, жест «по пальцам»</span></div>
+    <div class="say"><p>Что нужно: ребёнок младше семи лет.</p><p>В Москве и области с одним ребёнком –</p><p>до двенадцати миллионов.</p><p>Строит подрядчик по договору,</p><p>деньги лежат на эскроу.</p></div>
+    <div class="notes"><div class="lbl-cap">Титры по очереди: «Ребёнок до 7 лет» · «до 12 млн ₽ – Москва и МО» · «Подряд + эскроу»</div><div class="lbl-broll">B-roll: договор на столе, экран банка (без реальных данных)</div></div></div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:25–0:32</span><span>План 5 · на фоне дома</span></div>
+    <div class="say"><p>Мы в «Барн Модуль» строим</p><p>дизайнерские барнхаусы</p><p>именно так – по договору подряда с эскроу.</p></div>
+    <div class="notes"><div class="lbl-cap">Титр: «Барн Модуль – барнхаусы по семейной ипотеке»</div><div class="lbl-broll">B-roll: интерьер, второй свет, панорамное окно</div></div></div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:32–0:38</span><span>План 6 · крупно, CTA</span></div>
+    <div class="say"><p>Напишите «БАРН» в директ –</p><p>пришлю расчёт под вашу семью.</p><p>Одобрение – по условиям банка.</p></div>
+    <div class="notes"><div class="lbl-cap">Титр: «Напишите БАРН → расчёт» · мелко: «Условия банка. Льготная ставка субсидируется до 15 лет»</div></div></div>
+</section>
+
+<section class="variant" id="v-b">
+  <div class="vhead"><b>Вариант B – «платёж».</b> ~40 с, ~95 слов. Одна идея: одинаковые 12 млн, разница в платеже больше 50 тысяч в месяц. Говорящая голова + цифры в титрах.</div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:00–0:03</span><span>План 1 · крупно</span></div>
+    <div class="say"><p>Двенадцать миллионов в ипотеку.</p><p>Разница в платеже – пятьдесят тысяч в месяц.</p></div>
+    <div class="notes"><div class="lbl-cap">Титр: «12 млн ₽ · −51 000 ₽/мес»</div><div class="lbl-cut">Склейка сразу после «в месяц»</div></div></div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:03–0:11</span><span>План 2 · средний</span></div>
+    <div class="say"><p>Вариант первый – квартира в Москве.</p><p>Семья с одним ребёнком.</p><p>С октября семейная ставка – двенадцать процентов.</p><p>Платёж – около ста двадцати трёх тысяч.</p></div>
+    <div class="notes"><div class="lbl-cap">Титр: «Квартира, 1 ребёнок: 12% → ~123 000 ₽/мес»</div><div class="lbl-broll">B-roll: окна новостройки</div></div></div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:11–0:19</span><span>План 3 · крупно</span></div>
+    <div class="say"><p>Вариант второй – свой дом.</p><p>На строительство дома ставка шесть процентов,</p><p>сколько бы ни было детей.</p><p>Платёж – около семидесяти двух тысяч.</p></div>
+    <div class="notes"><div class="lbl-cap">Титр: «Свой дом: 6% → ~72 000 ₽/мес»</div><div class="lbl-broll">B-roll: барнхаус на участке, дрон</div><div class="lbl-cut">Склейка на «детей»</div></div></div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:19–0:27</span><span>План 4 · средний</span></div>
+    <div class="say"><p>Условия простые:</p><p>ребёнок младше семи лет,</p><p>в Москве и области – до двенадцати миллионов,</p><p>подрядчик и расчёт через эскроу.</p></div>
+    <div class="notes"><div class="lbl-cap">Титр-чеклист: «✓ ребёнок до 7 лет ✓ до 12 млн ₽ ✓ подряд + эскроу»</div></div></div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:27–0:34</span><span>План 5 · у дома</span></div>
+    <div class="say"><p>«Барн Модуль» строит барнхаусы</p><p>по договору подряда с эскроу.</p><p>Дизайн – как с картинки, цена – как у квартиры.</p></div>
+    <div class="notes"><div class="lbl-broll">B-roll: интерьер, кухня-гостиная, терраса</div><div class="lbl-cap">Титр: «Барн Модуль»</div></div></div>
+
+  <div class="shot"><div class="meta"><span class="tc">0:34–0:40</span><span>План 6 · крупно, CTA</span></div>
+    <div class="say"><p>Напишите «БАРН» –</p><p>пришлю расчёт под вашу семью.</p><p>Решение – за банком.</p></div>
+    <div class="notes"><div class="lbl-cap">Титр: «Напишите БАРН» · мелко: «Расчёт: 12 млн ₽, 30 лет, аннуитет. Льготная ставка субсидируется до 15 лет. Условия банка»</div></div></div>
+</section>
+
+<details>
+  <summary>Разбор конкурентов</summary>
+  <p>Отбор: Loore, хэштеги #семейнаяипотека #ипотеканадом #ипотекамосква #ижс + поиск «семейная ипотека 1 октября», сентябрь–октябрь 2026. Множитель – просмотры к медиане автора.</p>
+  <div class="wrap"><table>
+    <tr><th>Аккаунт</th><th>Просмотры</th><th>× медиана</th><th>Хук</th><th>Структура</th></tr>
+    <tr><td><a href="https://www.instagram.com/reel/DeTzIOgsarF/">@iramoroz_rieltor</a><br>10.10.2026</td><td>204 345</td><td>374×</td><td>«Я хочу вас обрадовать, семейная ипотека будет 6% на 30 лет»</td><td>Говорящая голова, 22 с, 38 слов, 0 склеек. Хук – цифры 6% и 30 лет в первой фразе, затем условие «вне зависимости от количества детей», без CTA. 172 комментария – спор в комментах.</td></tr>
+    <tr><td><a href="https://www.instagram.com/reel/DdyEizbsATF/">@natalya_obzor_moscow</a><br>27.09.2026</td><td>185 374</td><td>1,2×</td><td>«Сейчас я в Пушкино и я приехала не просто так»</td><td>Говорящая голова на объекте, 64 с, 6 цифр. Пик – сравнение платежа: «6% – 60 тысяч, с 1 октября – 103 тысячи». CTA: «оставляйте комментарии – скину подробности».</td></tr>
+    <tr><td><a href="https://www.instagram.com/reel/DeG7sQpO8L4/">@dbrus_ru</a><br>05.10.2026</td><td>585 950</td><td>443×</td><td>Титр «С 1 октября семейная ипотека по новым правилам»</td><td>Не говорящая голова: 11 с, музыка + текст. Та же ниша (стройка домов): «на строительство дома – 6%». CTA «ставьте +» – 2 439 комментариев.</td></tr>
+    <tr><td><a href="https://www.instagram.com/reel/DduWC2AsUHN/">@musatovre</a><br>25.09.2026</td><td>1 476 396</td><td>3 363×</td><td>Мем-звук 8 с, таблица ставок в описании</td><td>Не говорящая голова: тема новых ставок по числу детей + полная таблица Минфина в тексте; 19 409 репостов.</td></tr>
+  </table></div>
+  <p><b>Что берём:</b> цифра в первой фразе (6% / 12%) · одна идея на ролик · контраст «было/стало» или «квартира/дом» через платёж · CTA одним словом в комментарии/директ · 30–40 с, 2,3 слова в секунду, один план без сложного монтажа.</p>
+</details>
+
+<details>
+  <summary>Проверенные факты (22.10.2026)</summary>
+  <ul>
+    <li>С 1 октября 2026 ставка семейной ипотеки зависит от числа детей и региона. Москва, МО, СПб, ЛО: 1 ребёнок – 12%, до 12 млн; 2 – 10%, до 15 млн; 3 – 8%, до 18 млн; 4 – 6%, до 18 млн; 5+ – 4%, до 18 млн.</li>
+    <li>Условие: хотя бы один ребёнок младше 7 лет на дату договора.</li>
+    <li>Строительство частного дома, завершение стройки, участок под стройку – 6% вне зависимости от числа детей и региона.</li>
+    <li>Льготная ставка субсидируется не дольше 15 лет.</li>
+    <li>С 1 февраля 2026: одна льготная ипотека на семью, супруги – созаёмщики.</li>
+    <li>ИЖС по договору подряда: подрядчик – юрлицо или ИП, банки требуют расчёты через эскроу.</li>
+  </ul>
+  <p><b>Поправки к тезису владельца:</b></p>
+  <ul>
+    <li class="warn">Возраст ребёнка – младше 7 лет (не «до 6»).</li>
+    <li class="warn">В Москве на квартиру с одним ребёнком – не «сложнее получить 6%», а 12%; 6% на квартиру – только при 4 детях.</li>
+    <li class="warn">12 млн для Москвы и МО – лимит для семьи с одним ребёнком; отдельный лимит для ИЖС Минфин не публиковал – уточнять в банке.</li>
+    <li class="warn">Модульный дом: банк кредитует как ИЖС, если дом – жилой, на участке ИЖС/ЛПХ и по договору подряда с эскроу. Подходит ли «Барн Модуль» как подрядчик – проверить у банков-партнёров.</li>
+    <li class="warn">Расчёт в варианте B (72 / 123 тыс.) – аннуитет 12 млн на 30 лет, условный: ставка 6% субсидируется до 15 лет.</li>
+  </ul>
+  <p><b>Источники:</b> <a href="https://minfin.gov.ru/ru/press-center/?id_4=40636">Минфин, пресс-релиз 24.09.2026</a> · <a href="https://t-j.ru/news/family-mortgage-new-rules/">Т—Ж</a> · <a href="https://lenta.ru/articles/2026/09/25/izmeneniya-v-programme-semeynoy-ipoteki-s-1-otyabrya-2026-goda/">Lenta.ru</a> · <a href="https://xn--h1alcedd.xn--d1aqf.xn--p1ai/news/semeynaya-ipoteka-aktualnye-usloviya-na-iyul-2026/">Спроси ДОМ.РФ – условия на июль 2026</a> · <a href="https://t-j.ru/escrow-domrf/">Т—Ж – эскроу на ИЖС</a> · <a href="https://evening-kazan.ru/ekonomika/news/s-fevralya-v-semeynoy-ipoteke-poyavyatsya-novye-ogranicheniya-i-gibkaya-stavka">Вечерняя Казань – правила с 1 февраля</a></p>
+</details>
+
+</main>
+<script>
+(() => {
+  let playing = false, speed = 1.0, acc = 0, last = 0;
+  const playBtn = document.getElementById('play');
+  const sv = document.getElementById('speedv');
+  const setSpeed = (s) => { speed = Math.min(5, Math.max(0.2, Math.round(s * 10) / 10)); sv.textContent = speed.toFixed(1) + '×'; };
+  const tick = (t) => {
+    if (!playing) return;
+    if (last) { acc += (t - last) / 1000 * 40 * speed; const px = Math.floor(acc); if (px >= 1) { window.scrollBy(0, px); acc -= px; } }
+    last = t;
+    if (window.innerHeight + window.scrollY >= document.body.scrollHeight - 2) { toggle(false); return; }
+    requestAnimationFrame(tick);
+  };
+  const toggle = (on) => {
+    playing = on === undefined ? !playing : on;
+    playBtn.textContent = playing ? '⏸ Пауза' : '▶ Старт';
+    playBtn.classList.toggle('on', playing);
+    last = 0; acc = 0;
+    if (playing) requestAnimationFrame(tick);
+  };
+  const showVariant = (v) => {
+    document.querySelectorAll('.variant').forEach((el) => el.classList.toggle('active', el.id === 'v-' + v));
+    document.querySelectorAll('.vbtn').forEach((b) => b.classList.toggle('on', b.dataset.v === v));
+    window.scrollTo(0, 0);
+  };
+  playBtn.addEventListener('click', () => toggle());
+  document.getElementById('faster').addEventListener('click', () => setSpeed(speed + 0.1));
+  document.getElementById('slower').addEventListener('click', () => setSpeed(speed - 0.1));
+  document.getElementById('top').addEventListener('click', () => window.scrollTo(0, 0));
+  document.querySelectorAll('.vbtn').forEach((b) => b.addEventListener('click', () => showVariant(b.dataset.v)));
+  document.addEventListener('keydown', (e) => {
+    if (e.target.tagName === 'INPUT') return;
+    if (e.code === 'Space') { e.preventDefault(); toggle(); }
+    else if (e.key === 'ArrowUp') { e.preventDefault(); setSpeed(speed + 0.1); }
+    else if (e.key === 'ArrowDown') { e.preventDefault(); setSpeed(speed - 0.1); }
+    else if (e.key === '1') showVariant('a');
+    else if (e.key === '2') showVariant('b');
+  });
+})();
+</script>
+</body>
+</html>
