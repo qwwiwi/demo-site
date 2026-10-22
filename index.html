@@ -250,8 +250,11 @@
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       if (!form.name.value.trim() || !form.phone.value.trim()) { form.reportValidity(); return; }
-      form.hidden = true;
-      thanks.hidden = false;
+      const btn = form.querySelector('button');
+      btn.disabled = true;
+      fetch('/api/lead', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: form.name.value, phone: form.phone.value, model: form.model.value }) })
+        .then((r) => { if (!r.ok) throw new Error(); form.hidden = true; thanks.hidden = false; })
+        .catch(() => { btn.disabled = false; alert('Не получилось отправить. Попробуйте ещё раз или позвоните нам.'); });
     });
   })();
 </script>
