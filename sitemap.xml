@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://barn-modul.example/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://barn-modul.example/blog/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://barn-modul.example/blog/kruglogodichnyj-modulnyj-dom/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://barn-modul.example/blog/modulnyj-dom-pod-klyuch-cena/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://barn-modul.example/blog/stil-barnhaus/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://barn-modul.example/blog/modulnyj-ili-karkasnyj-dom/</loc><lastmod>2026-10-22</lastmod></url>
-  <url><loc>https://barn-modul.example/blog/modulnyj-dom-v-ipoteku/</loc><lastmod>2026-10-22</lastmod></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://demo-site-f9f703.pipecore.io/</loc><lastmod>2026-10-22</lastmod><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/hero.webp</image:loc></image:image></url>
+  <url><loc>https://demo-site-f9f703.pipecore.io/blog/</loc><lastmod>2026-10-22</lastmod></url>
+  <url><loc>https://demo-site-f9f703.pipecore.io/blog/kruglogodichnyj-modulnyj-dom/</loc><lastmod>2026-10-22</lastmod><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/kruglogodichnyj-modulnyj-dom/cover.webp</image:loc></image:image><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/kruglogodichnyj-modulnyj-dom/inline.webp</image:loc></image:image></url>
+  <url><loc>https://demo-site-f9f703.pipecore.io/blog/modulnyj-dom-pod-klyuch-cena/</loc><lastmod>2026-10-22</lastmod><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/modulnyj-dom-pod-klyuch-cena/cover.webp</image:loc></image:image><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/modulnyj-dom-pod-klyuch-cena/inline.webp</image:loc></image:image></url>
+  <url><loc>https://demo-site-f9f703.pipecore.io/blog/stil-barnhaus/</loc><lastmod>2026-10-22</lastmod><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/stil-barnhaus/cover.webp</image:loc></image:image><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/stil-barnhaus/inline.webp</image:loc></image:image><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/competitors/doma-barnhaus.webp</image:loc></image:image></url>
+  <url><loc>https://demo-site-f9f703.pipecore.io/blog/modulnyj-ili-karkasnyj-dom/</loc><lastmod>2026-10-22</lastmod><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/modulnyj-ili-karkasnyj-dom/cover.webp</image:loc></image:image><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/modulnyj-ili-karkasnyj-dom/inline.webp</image:loc></image:image><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/competitors/doorhan-house.webp</image:loc></image:image></url>
+  <url><loc>https://demo-site-f9f703.pipecore.io/blog/modulnyj-dom-v-ipoteku/</loc><lastmod>2026-10-22</lastmod><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/modulnyj-dom-v-ipoteku/cover.webp</image:loc></image:image><image:image><image:loc>https://demo-site-f9f703.pipecore.io/img/blog/modulnyj-dom-v-ipoteku/inline.webp</image:loc></image:image></url>
 </urlset>

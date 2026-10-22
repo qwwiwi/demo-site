@@ -137,3 +137,13 @@ pre .k { color: var(--code-keyword); } pre .s { color: var(--code-string); } pre
 }
 .card > .pill { align-self: flex-start; }
 .split > *, .step > * { min-width: 0; }
+
+/* Images: covers, inline figures, plans, thumbnails */
+.article figure { margin: 28px 0; }
+.article figure img, .article figure svg { width: 100%; height: auto; display: block; border-radius: var(--radius-lg); box-shadow: var(--ring); background: var(--surface); }
+.article figcaption { margin-top: 8px; font-size: 13px; line-height: 1.5; color: var(--muted); }
+.post-date { font-size: 13px; color: var(--muted); }
+.article p.post-date { font-size: 13px; color: var(--muted); }
+.related { list-style: disc; }
+.post-thumb, .model-photo { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius); background: var(--bg); }
+.hero-img { width: 100%; max-width: 1040px; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: var(--radius-lg); box-shadow: var(--ring); margin-top: 32px; }
